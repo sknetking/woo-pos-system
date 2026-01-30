@@ -1,0 +1,204 @@
+/* POS Plugin Styles */
+#pos-app {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-family: Arial, sans-serif;
+    background: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#pos-app h3 {
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#pos-app input[type="text"],
+#pos-app input[type="number"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 14px;
+    transition: border-color 0.3s;
+}
+
+#pos-app input[type="text"]:focus,
+#pos-app input[type="number"]:focus {
+    outline: none;
+    border-color: #0073aa;
+    box-shadow: 0 0 3px rgba(0, 115, 170, 0.3);
+}
+
+#pos-app button {
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#pos-app button:hover {
+    opacity: 0.9;
+}
+
+/* WhatsApp Icon Styling */
+.pos-whatsapp-link {
+    display: inline-flex !important;
+    align-items: center !important;
+    gap: 5px !important;
+    text-decoration: none !important;
+    color: #25D366 !important;
+    font-weight: 500 !important;
+    transition: all 0.3s ease !important;
+}
+
+.pos-whatsapp-link:hover {
+    color: #128C7E !important;
+    transform: translateY(-1px) !important;
+}
+
+.pos-whatsapp-link img {
+    width: 48px !important;
+    height: 55px !important;
+    transition: transform 0.3s ease !important;
+    padding: 5px 0px;
+}
+
+.pos-whatsapp-link:hover img {
+    transform: scale(1.1) !important;
+}
+
+#pos-app button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+#pos-add {
+    width: 100%;
+    padding: 10px;
+    background: #0073aa;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+#pos-submit {
+    width: 100%;
+    padding: 12px;
+    background: #28a745;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+#pos-cart {
+    width: 100%;
+    margin-bottom: 20px;
+    border-collapse: collapse;
+    background: white;
+}
+
+#pos-cart th {
+    background: #f5f5f5;
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+    font-weight: bold;
+}
+
+#pos-cart td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+.pos-gst-section {
+    margin-bottom: 15px;
+    padding: 10px;
+    background: #f9f9f9;
+    border-radius: 3px;
+    border: 1px solid #e9ecef;
+}
+
+#pos-totals {
+    background: #f5f5f5;
+    padding: 15px;
+    border-radius: 3px;
+    border: 1px solid #e9ecef;
+}
+
+#pos-totals div {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+
+#pos-totals div:last-child {
+    margin-bottom: 0;
+    font-weight: bold;
+    font-size: 1.2em;
+    color: #28a745;
+}
+
+#pos-result {
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 3px;
+}
+
+#pos-product-suggestions {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: white;
+    border: 1px solid #ccc;
+    border-top: none;
+    max-height: 200px;
+    overflow-y: auto;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.pos-suggestion {
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.pos-suggestion:hover {
+    background: #f8f9fa;
+}
+
+.pos-suggestion:last-child {
+    border-bottom: none;
+}
+
+.pos-suggestion div:first-child {
+    font-weight: bold;
+    margin-bottom: 2px;
+}
+
+.pos-suggestion div:last-child {
+    font-size: 0.9em;
+    color: #666;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    #pos-app {
+        margin: 10px;
+        padding: 15px;
+    }
+
+    #pos-app input[type="text"],
+    #pos-app input[type="number"] {
+        font-size: 16px;
+        /* Prevent zoom on iOS */
+    }
+}
